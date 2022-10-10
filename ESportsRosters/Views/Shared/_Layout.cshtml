@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<!-- -->
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+        <header >
+
+            <nav class="navbar navbar-dark bg-dark" >
+
+                <div class="navbar-header"><!--Nav Header-->
+                    <a class="navbar-brand" href="#">E-Sports Rosters</a><!--Nav Brand/Website Name --> <!--Place Holder Link # -->
+                </div>
+
+                <!--Nav Bar Links-->
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        
+
+                        <li class="nav-item">
+                            <!--Index Page Link-->
+                            <a class="nav-link" asp-controller="Home" asp-action="Index"> Index</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--Favorite Teams Link-->
+                            <a class="nav-link" asp-controller="" asp-action=""> Your Teams</a>
+                        </li>
+
+                        <!--Games Drop Down -->
+                        <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"> Games </a>
+
+                            <div class="dropdown-menu">
+                                <a lass="dropdown-item" asp-controller="" asp-action="">Counter Strike Global Offensive </a><!--Link to CSGO -->
+                                <a class="dropdown-item" asp-controller="" asp-action="">League Of Legends </a> <!--Link to LOL -->
+                            </div> 
+
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+                
+                
+
+
+
+
+                
+
+            </nav>
+
+         
+
+        </header>
+
+
+
+        <div id="container">
+            @RenderBody()
+        </div>
+</body>
+</html>
